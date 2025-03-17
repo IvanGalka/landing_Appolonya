@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --main-green-color: #aaf013bf;
+  --shadow-green-color: #527f56;
+  --lime-green-color: #9af759;
+  --lavanda-color: #9b2efa;
+  --white-lime-text: #e9ffb8;
+  --lavanda-orange-wrap: #e7a223;
+  --lavanda-color-dark: #4b1f71;
+  --shadow-green-color-opacity: #527f56da;
+  --shadow-green-color-opacity-min: #527f5663;
+  --dark-green-color: #1f3d21;
+  --lavanda-color-opacity: #9b2efa92;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +24,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }

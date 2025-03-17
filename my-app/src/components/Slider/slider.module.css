@@ -1,0 +1,91 @@
+.slider {
+  position: relative;
+  width: 100%;
+  padding: 200px 0 50px 100px;
+  overflow: hidden;
+}
+
+.allItemsContainer {
+  display: flex;
+  transition: transform .5s ease;
+}
+
+.arrowLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  z-index: 8;
+  transition: all .3s ease;
+  background: transparent;
+  cursor: pointer;
+}
+
+.arrowRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  z-index: 8;
+  transition: all .3s ease;
+  background: linear-gradient(transparent);
+  cursor: pointer;
+}
+
+.arrowLeft svg,
+.arrowRight svg {
+  transition: all .3s ease;
+}
+
+.arrowLeft path,
+.arrowRight path {
+  fill: var(--dark-green-color);
+}
+
+.arrowLeft:hover {
+  transition: all .3s ease;
+  background: linear-gradient(90deg, var(--shadow-green-color-opacity), transparent);
+}
+
+.arrowRight:hover {
+  transition: all .3s ease;
+  background: linear-gradient(90deg, transparent, var(--shadow-green-color-opacity));
+}
+
+.arrowLeft:hover svg,
+.arrowRight:hover svg {
+  transform: scale(1.2);
+}
+
+.pagginationContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+}
+
+.pagginCircle {
+  width: 15px;
+  height: 15px;
+  background-color: var(--shadow-green-color-opacity-min);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.pagginCircle:hover {
+  background-color: var(--lavanda-color-opacity);
+  transform: scale(1.2);
+}
+
+.activePagginCircle {
+  background-color: var(--lavanda-color-dark);
+}
+
+.pagginCircle:not(:last-child) {
+  margin-right: 10px;
+}

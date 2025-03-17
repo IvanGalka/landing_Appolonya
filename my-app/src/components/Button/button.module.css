@@ -1,0 +1,133 @@
+/* стили кнопки общие */
+button {
+  position: relative;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all .2s ease;
+  overflow: hidden;
+}
+
+button:hover {
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
+/* стили обводки общие */
+button span {
+  position: absolute;
+}
+
+button span:nth-child(2n+1) {
+  width: 100%;
+  height: 2px;
+}
+
+button span:nth-child(2n) {
+  width: 2px;
+  height: 100%;
+}
+
+button span:nth-child(1) {
+  top: 0;
+  left: 0;
+  animation: 1.5s linear infinite animateTop paused;
+}
+
+button span:nth-child(2) {
+  top: 0;
+  right: 0;
+  animation: 1s linear infinite animateRight paused;
+}
+
+button span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  animation: 1.5s linear infinite animateBot paused;
+}
+
+button span:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  animation: 1s linear infinite animateLeft paused;
+}
+
+button:hover span {
+  animation-play-state: running;
+}
+
+/* зеленая кнопка */
+
+.greenButton {
+  color: var(--shadow-green-color);
+  background-color: var(--lime-green-color);
+}
+
+.greenButton span {
+  background: var(--lime-green-color);
+}
+
+.greenButton:hover span:nth-child(2n+1) {
+  background: linear-gradient(90deg, var(--lime-green-color), var(--lavanda-color), var(--lime-green-color));
+}
+
+.greenButton:hover span:nth-child(2n) {
+  background: linear-gradient(0, var(--lime-green-color), var(--lavanda-color), var(--lime-green-color));
+}
+
+/* лавандовая кнопка */
+
+.lavandaButton {
+  color: var(--white-lime-text);
+  background-color: var(--lavanda-color);
+}
+
+.lavandaButton span {
+  background: var(--lavanda-color);
+}
+
+.lavandaButton:hover span:nth-child(2n+1) {
+  background: linear-gradient(90deg, var(--lavanda-color), var(--lavanda-orange-wrap), var(--lavanda-color));
+}
+
+.lavandaButton:hover span:nth-child(2n) {
+  background: linear-gradient(0, var(--lavanda-color), var(--lavanda-orange-wrap), var(--lavanda-color));
+}
+
+@keyframes animateTop {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes animateRight {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+@keyframes animateBot {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes animateLeft {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
