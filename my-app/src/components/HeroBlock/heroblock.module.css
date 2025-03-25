@@ -23,7 +23,7 @@
   justify-content: space-between;
   min-width: 100%;
   max-width: 100%;
-  padding: 50px 0;
+  padding: 200px 0 150px 100px;
   z-index: 9;
 }
 
@@ -86,6 +86,6 @@
 
 .picture {
   position: absolute;
-  bottom: -55px;
+  bottom: -5px;
   right: 100px;
 }

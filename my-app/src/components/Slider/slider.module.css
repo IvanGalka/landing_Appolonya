@@ -1,7 +1,6 @@
 .slider {
   position: relative;
   width: 100%;
-  padding: 200px 0 50px 100px;
   overflow: hidden;
 }
 
@@ -66,6 +65,7 @@
   bottom: 20px;
   left: 50%;
   display: flex;
+  transform: translateX(-50%);
 }
 
 .pagginCircle {

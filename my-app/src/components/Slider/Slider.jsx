@@ -1,11 +1,16 @@
-import { useEffect, useState, createContext } from 'react';
+import { useState, createContext } from 'react';
 import styled from './slider.module.css';
 import SvgSprite from '../SvgSprite';
 
 export const SliderContext = createContext();
 
-function Slider({data, children}) {
-  const SliderStopValueMax = children.length - 1;
+function Slider(
+  {
+    data,
+    children,
+    childrenOnPage
+  }) {
+  const SliderStopValueMax = data.length - 1;
   const [offset, setOffset] = useState([0]);
   const handleClickRight = () => {
     setOffset((currentOffset) => {
@@ -41,17 +46,17 @@ function Slider({data, children}) {
     });
   };
   
-  setTimeout (() => {
-    setOffset((currentOffset) => {
-      let newOffset;
-      if (currentOffset <= -SliderStopValueMax) {
-        newOffset = 0;
-      } else {
-        newOffset = --currentOffset;
-      };
-      return newOffset;
-    });
-  },5000)
+  // setTimeout (() => {
+  //   setOffset((currentOffset) => {
+  //     let newOffset;
+  //     if (currentOffset <= -SliderStopValueMax) {
+  //       newOffset = 0;
+  //     } else {
+  //       newOffset = --currentOffset;
+  //     };
+  //     return newOffset;
+  //   });
+  // },5000)
   return (
     <div className={styled.slider}>
       <span className={styled.arrowLeft} onClick={handleClickLeft}>
@@ -69,7 +74,7 @@ function Slider({data, children}) {
         <SvgSprite spriteName='arrowRight' />
       </span>
       <div className={styled.pagginationContainer}>
-        {children.map((el,idx) => (
+        {data.map((el,idx) => (
           <span 
             key={idx}
             className={`${styled.pagginCircle} ` + `${-offset === idx ? `${styled.activePagginCircle}` : ''}`}

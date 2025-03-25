@@ -1,8 +1,42 @@
+import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 import SvgSprite from '../SvgSprite';
 import styled from './header.module.css';
 
-const navMenuItems = ['О нас','Услуги и цены','Наши врачи','Акции','Отзывы','Лаборатория','Пациентам','Контакты']
+const navMenuItems = [
+  {
+    name: 'О нас',
+    link: '/about'
+  },
+  {
+    name: 'Услуги и цены',
+    link:'service'
+  },
+  {
+    name: 'Наши врачи',
+    link: 'doctors' 
+  },
+  {
+    name: 'Акции',
+    link: '/'
+  },
+  {
+    name: 'Отзывы',
+    link: '/'
+  },
+  {
+    name: 'Лаборатория',
+    link: '/'
+  },
+  {
+    name: 'Пациентам',
+    link: '/'
+  },
+  {
+    name: 'Контакты',
+    link: '/'
+  }
+]
 
 function Header() {
   return (
@@ -31,7 +65,9 @@ function Header() {
         <nav className={styled.headerNav}>
           <ul className={styled.navList}>
             {navMenuItems.map(item => (
-              <li key={item} className={styled.navItem}>{item}</li>
+              <li key={item.name} className={styled.navItem}>
+                <Link className={styled.itemLink} to={item.link}>{item.name}</Link>
+              </li>
             ))}
           </ul>
         </nav>

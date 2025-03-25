@@ -167,7 +167,6 @@
   padding: 15px 20px;
   font-size: 20px;
   font-weight: 700;
-  color: var(--white-lime-text);
   transition: all .3s ease-in-out;
   border-radius: 20px;
   cursor: pointer;
@@ -175,6 +174,13 @@
 
 .navItem:hover {
   transform: scale(1.05);
-  color: var(--shadow-green-color);
   background-color: var(--white-lime-text);
+}
+
+.itemLink {
+  color: var(--white-lime-text);
+}
+
+.navItem:hover .itemLink {
+  color: var(--shadow-green-color);
 }

@@ -1,0 +1,80 @@
+.container {
+  padding: 50px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background-color: var(--mint-color-opacity);
+  border-radius: 100px;
+  box-shadow: 0 0 50px 10px var(--shadow-green-color-opacity);
+}
+
+.formBlock {
+  width: 50%;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--dark-green-color);
+  margin-bottom: 15px;
+}
+
+.descript {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark-green-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.inputsBlock {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 30px;
+}
+
+.nameInput {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--lavanda-color-dark);
+  margin-bottom: 10px;
+}
+
+.input {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid var(--lavanda-color-dark);
+  color: var(--lavanda-color-dark);
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.input:hover {
+  background-color: var(--lavanda-orange-wrap-opacity);
+}
+
+.submitBtn {
+  max-width: 350px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 3px solid var(--dark-green-color);
+  color: var(--lavanda-color-dark);
+  background-color: var(--lavanda-orange-wrap);
+}

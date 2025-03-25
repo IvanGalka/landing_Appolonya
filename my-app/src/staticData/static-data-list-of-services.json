@@ -1,0 +1,67 @@
+[
+  {
+    "svgUrl": "emergencyDoctorOpinion",
+    "title": "Экспертное мнение врача",
+    "url": "/"
+  },
+  {
+    "svgUrl": "dentistry",
+    "title": "Лечение зубов",
+    "url": "/"
+  },
+  {
+    "svgUrl": "professionalHygiene",
+    "title": "Профессиональная гигиена",
+    "url": "/"
+  },
+  {
+    "svgUrl": "aestheticDentistry",
+    "title": "Эстетическая стоматология",
+    "url": "/"
+  },
+  {
+    "svgUrl": "periodontology",
+    "title": "Пародонтология",
+    "url": "/"
+  },
+  {
+    "svgUrl": "surgicalDentistry",
+    "title": "Хирургическая стоматология",
+    "url": "/"
+  },
+  {
+    "svgUrl": "dentalImplantation",
+    "title": "Имплантация зубов",
+    "url": "/"
+  },
+  {
+    "svgUrl": "dentalProsthetics",
+    "title": "Протезирование зубов",
+    "url": "/"
+  },
+  {
+    "svgUrl": "correctionOfBite",
+    "title": "Исправление прикуса",
+    "url": "/"
+  },
+  {
+    "svgUrl": "pediatricDentistry",
+    "title": "Детская стоматология",
+    "url": "/"
+  },
+  {
+    "svgUrl": "treatmentWithoutPain",
+    "title": "Лечение без боли",
+    "url": "/"
+  },
+  {
+    "svgUrl": "diagnostics",
+    "title": "Диагностика",
+    "url": "/"
+  },
+  {
+    "svgUrl": "dentistryForPregnantWomen",
+    "title": "Стоматология для беременных",
+    "url": "/"
+  }
+]

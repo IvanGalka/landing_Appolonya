@@ -11,6 +11,10 @@
   --shadow-green-color-opacity-min: #527f5663;
   --dark-green-color: #1f3d21;
   --lavanda-color-opacity: #9b2efa92;
+  --mint-color-opacity: #c0fcd458;
+  --mint-container-color: #deffc7;
+  --lavanda-color-opacity-two: #bb6dff4e;
+  --lavanda-orange-wrap-opacity: #ffbb3c42;
 }
 body {
   margin: 0;

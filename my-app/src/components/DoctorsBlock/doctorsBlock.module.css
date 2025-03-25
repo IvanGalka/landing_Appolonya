@@ -1,0 +1,68 @@
+.container {
+  max-width: 1920px;
+  padding: 50px 150px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--dark-green-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slide {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  max-width: 30%;
+  min-width: 30%;
+  padding: 30px 25px;
+  border-radius: 30px;
+  background-color: var(--white-lime-text);
+}
+
+.presentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.docPhoto {
+  width: 50%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.docName {
+  font-size: 22px;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 5px solid var(--dark-green-color);
+  color: var(--dark-green-color);
+}
+
+.docStatus {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  color: var(--dark-green-color);
+}
+
+.docLink {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}

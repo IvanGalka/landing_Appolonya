@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Яндекс",
+    "rating": "4,8",
+    "imgUrl": "/image/rating/yandex_logo.png"
+  },
+  {
+    "name": "Zoon",
+    "rating": "4,6",
+    "imgUrl": "/image/rating/zoon_logo.png"
+  },
+  {
+    "name": "2gis",
+    "rating": "5",
+    "imgUrl": "/image/rating/2gis_logo.png"
+  },
+  {
+    "name": "Отзовик",
+    "rating": "4,7",
+    "imgUrl": "/image/rating/otzovic_logo.png"
+  }
+]

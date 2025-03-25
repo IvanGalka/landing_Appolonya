@@ -1,0 +1,147 @@
+.container {
+  position: relative;
+  padding: 50px 100px;
+  background-color: var(--shadow-green-color-opacity);
+  overflow: hidden;
+  box-shadow: 0 0 30px 15px var(--shadow-green-color);
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  width: 500px;
+  height: 500px;
+  border-radius: 100px;
+  background-color: var(--lavanda-color);
+  z-index: 1;
+  opacity: 0.3;
+  transform: translateY(-50%) rotate(70deg);
+  box-shadow: 20px 15px 15px 1px var(--lavanda-color-dark);
+}
+.container::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 0px;
+  width: 550px;
+  height: 550px;
+  border-radius: 20px;
+  background-color: var(--lavanda-orange-wrap);
+  z-index: 1;
+  opacity: 0.7;
+  transform: translateY(-50%) rotate(-120deg);
+  box-shadow: -20px 15px 15px 1px var(--shadow-green-color);
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--white-lime-text);
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  width: 500px;
+  height: 500px;
+  border-radius: 100px;
+  background-color: var(--white-lime-text);
+  z-index: 1;
+  opacity: 0.3;
+  transform: translateY(-50%) rotate(-70deg);
+  box-shadow: 20px 15px 15px 1px var(--lavanda-color-dark);
+}
+
+.wrapper::after {
+  content: '';
+  position: absolute;
+  top: 80%;
+  left: 500px;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: var(--lavanda-orange-wrap);
+  opacity: 0.8;
+  z-index: 1;
+  transform: translateY(-50%) rotate(-75deg);
+  box-shadow: -20px 15px 15px 1px var(--shadow-green-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  z-index: 9;
+}
+
+.clinicsTitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 2;
+  margin-bottom: 20px;
+  color: var(--lime-green-color);
+  border-bottom: 3px solid var(--lime-green-color);
+}
+
+.listAddress {
+  display: flex;
+  flex-direction: column;
+}
+
+.addressLink {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 30px;
+  font-size: 18px;
+  color: var(--white-lime-text);
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.metroName {
+  color: var(--lavanda-color-dark);
+}
+
+.lineMetroColor {
+  position: absolute;
+  top: 15px;
+  left: 7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.addressLink:hover {
+  transform: scale(1.03);
+  background-color: var(--white-lime-text);
+  box-shadow: 0 0 10px 10px var(--dark-green-color);
+}
+
+.addressLink:hover .addressClinic {
+  color: var(--lavanda-color);
+}
+
+.mapBlock {
+  margin-left: 5%;
+  width: 65%;
+  max-height: 900px;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 3px solid transparent;
+  transition: all .2s ease;
+  z-index: 9;
+}
+
+.mapBlock:hover {
+  border-color: var(--lavanda-color-dark);
+}

@@ -1,0 +1,99 @@
+.container {
+  padding: 50px 70px;
+  background-color: var(--lavanda-orange-wrap-opacity);
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--lavanda-color);
+}
+
+.tabsBlock {
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: var(--shadow-green-color-opacity);
+}
+
+.buttonTab {
+  font-size: 20px;
+  font-weight: 700;
+  border: 3px solid var(--lavanda-orange-wrap);
+  border-radius: 30px;
+  color: var(--lavanda-color-dark);
+  background-color: var(--white-lime-text);
+}
+
+.buttonTab:not(:last-child) {
+  margin-right: 20px;
+}
+
+.buttonTab:hover {
+  border-radius: 30px;
+  color: var(--dark-green-color);
+  border-color: var(--dark-green-color);
+  background-color: var(--lime-green-color);
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newCard {
+  width: 23%;
+  min-height: 100%;
+}
+
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+  border-radius: 30px;
+  border: 3px solid var(--lavanda-color-dark);
+  transition: all .3s ease;
+}
+
+.cardLink:hover {
+  box-shadow: 0 0 15px 2px var(--lavanda-color);
+  transform: scale(1.03);
+}
+
+.newHero {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.newImage {
+  width: 40%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.newDate {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--lime-green-color);
+  min-height: fit-content;
+  max-height: fit-content;
+  padding: 7px 10px;
+  border-radius: 10px;
+  background-color: var(--lavanda-color-dark);
+}
+
+.newTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--lavanda-color-dark);
+}
+
+.newPreview {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark-green-color);
+}

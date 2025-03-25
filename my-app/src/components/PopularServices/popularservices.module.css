@@ -1,0 +1,141 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px;
+  background-color: var(--mint-color-opacity);
+}
+.container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  width: 500px;
+  height: 500px;
+  border-radius: 100px;
+  background-color: var(--lavanda-color);
+  z-index: 1;
+  opacity: 0.3;
+  transform: translateY(-50%) rotate(70deg);
+  box-shadow: 20px 15px 15px 1px var(--lavanda-color-dark);
+}
+.container::after {
+  content: '';
+  position: absolute;
+  top: 80%;
+  left: 500px;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: var(--lime-green-color);
+  z-index: 1;
+  /* opacity: 1; */
+  transform: translateY(-50%) rotate(-75deg);
+  box-shadow: -20px 15px 15px 1px var(--shadow-green-color);
+}
+
+.titleParth {
+  width: 30%;
+  z-index: 2;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--dark-green-color);
+}
+
+.linkAll {
+  position: relative;
+  max-width: min-content;
+  padding: 10px 20px;
+  margin-left: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 50px;
+  color: var(--white-lime-text);
+  background-color: var(--lavanda-color-dark);
+  transition: all .3s ease;
+  border: 4px solid transparent
+}
+
+.linkAll::after {
+  content: '\276F';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.linkAll:hover {
+  padding-right: 40px; 
+  transform: scale(1.1);
+  border-color: var(--lime-green-color);
+  color: var(--lime-green-color);
+  background-color: var(--lavanda-color);
+}
+
+.linkAll:hover::after {
+  opacity: 1;
+}
+
+.servicesPath {
+  width: 60%;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: var(--mint-container-color);
+  box-shadow: 0 10px 15px 1px var(--shadow-green-color-opacity);
+  z-index: 2;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  
+  width: 100%;
+  font-size: 20px;
+  
+  
+}
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.itemLink {
+  display: flex;
+  padding: 10px;
+  transition: all .3s ease;
+  border-radius: 10px;
+}
+.item span {
+  flex: 0 0 auto;
+}
+
+.itemTitle {
+  padding-right: 10px;
+  order: 1;
+}
+
+.itemPrice {
+padding-left: 10px;
+  order: 3;
+}
+
+.itemLink::before {
+  content: '';
+  border-bottom: 1px dotted #666;
+  margin-bottom: 4px;
+  flex: 1 1 auto;
+  order: 2;
+}
+
+.itemLink:hover {
+  color: var(--lime-green-color);
+  background-color: var(--lavanda-color-dark);
+  transform: scale(1.05);
+}

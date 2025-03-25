@@ -1,0 +1,46 @@
+.container {
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--dark-green-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contentBlock {
+  padding: 50px 50px 20px;
+  background-color: var(--lavanda-color-opacity-two);
+  border-radius: 50px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.iconWrapper {
+  margin-right: 15px;
+}
+
+.itemTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-green-color);
+}
+
+.itemDescript {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-green-color);
+}

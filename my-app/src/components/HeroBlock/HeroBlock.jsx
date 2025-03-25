@@ -1,5 +1,5 @@
 import styled from './heroblock.module.css';
-import slidesData from "../../static-data-hero-slider.json";
+import slidesData from "../../staticData/static-data-hero-slider.json";
 import Slider from '../Slider/Slider';
 
 function HeroBlock() {
@@ -7,6 +7,7 @@ function HeroBlock() {
     <div className={styled.container}>
       <Slider 
         data={slidesData}
+        childrenOnPage={1}
       >
         {slidesData.map((item,idx) => (
           <div key={idx} className={styled.slide}>
